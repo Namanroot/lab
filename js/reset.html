@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Login-page</title>
+    <style>
+        .form1 {
+            padding: 20px;
+            height: 100%;
+            background-color: rgba(173, 216, 230, 0.562);
+            box-shadow: 0 0 5px 2px gray;
+        }
+        
+        #btn {
+            width: 70px;
+            height: 30px;
+            border-radius: 5%;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form1">
+        <label>Name<br><input type="text" name="uname"/></label>
+        <br><br>
+        <hr> Items
+        <br>
+        <input type="checkbox" id="c1" value="9" />Four 100-watt light bulbs for $2.39
+        <br><br>
+        <input type="checkbox" id="c2" value="13" />Eight 100-watt light bulbs for $4.29
+        <br><br>
+        <input type="checkbox" id="c3" value="13" />Four 100-watt, long-life light bulbs for $3.95
+        <br><br>
+        <input type="checkbox" id="c4" value="57" />Eight 100-watt, long-life light bulbs for $7.49
+        <br><br>
+        <hr> Payment
+        <br>
+        <input type="checkbox" id="p1" />Visa
+        <br><br>
+        <input type="checkbox" id="p2" />MasterCard
+        <br><br>
+        <input type="checkbox" id="p3" />Discover
+        <br><br>
+        <input type="submit" id="btn" onclick="format()" />
+        <input type="reset"  id="btn" style="background-color: red;" />
+    </form>
+    <script type="text/javascript">
+        function format() {
+            var a = document.getElementById("c1");
+            var b = document.getElementById("c2");
+            var c = document.getElementById("c3");
+            var d = document.getElementById("c4");
+            document.write("The selected elements are: </br>");
+            if (a.checked == true) {
+                document.write("Four 100-watt light bulbs for $2.39</br>");
+            }
+            if (b.checked == true) {
+                document.write("Eight 100-watt light bulbs for $4.29</br>");
+            }
+            if (c.checked == true) {
+                document.write("Four 100-watt, long-life light bulbs for $3.95</br>");
+            }
+            if (d.checked == true) {
+                document.write("Eight 100-watt, long-life light bulbs for $7.49</br>");
+            }
+
+        }
+    </script>
+</body>
+
+</html>

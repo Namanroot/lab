@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        var string = prompt("Enter a sentence : ");
+        //converting it into an array
+        var words = string.split(' ');
+
+        words.sort();
+
+        document.write("The words in sorted order are : ");
+
+        //it will be of for charecters and in for the index no
+        for(var element of words)
+        {
+            document.write(element+" ");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

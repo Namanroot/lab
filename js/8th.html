@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        var arraynos = [1,2,3,0,0,5,0];
+        for(var i =0;i<arraynos.length;i++)
+        {
+            if(arraynos[i]==0)
+            {
+                //at position i remove 1 element---that's
+                //the use of splice
+                arraynos.splice(i,1);
+                //amazing catch we have to check the index
+                //again as the element is being deleted 
+                //so if there is a zero next then it will
+                //get skipped
+                i--;
+            }
+        }
+        document.write(arraynos);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

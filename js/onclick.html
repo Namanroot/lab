@@ -1,0 +1,65 @@
+
+<!-- Demonstrate Onclick and onDoubleClick -->
+<!-- demonstrate Onmousehover and onmouseover -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="magic"></p>
+    <br />
+    <button id="hide">Show The text</button>
+    <button id="show">Hide the text by doubleclicking</button>
+    <h3 id="text">Hover Over</h3>
+    <p id="mouse">Click this thing</p>
+    <br />
+
+    <script>
+        let magic=document.getElementById('magic');
+        let hide=document.getElementById('hide');
+        let show=document.getElementById('show');
+        let text=document.getElementById('text');
+        let mouse=document.getElementById('mouse');
+
+
+        hide.onclick = function(){
+            magic.innerHTML='hi, how are you';
+        }
+
+        show.ondblclick = function(){
+            magic.innerHTML='';
+        }
+
+
+
+
+
+        text.onmouseover = function(){
+            text.innerHTML='oops!';
+        }
+        
+        text.onmouseout = function(){
+            text.innerHTML='Hover Over';
+        }
+
+
+
+        
+        mouse.onmousedown= function(){
+            mouse.style.color="blue";
+        }
+
+        mouse.onmouseup= function(){
+            mouse.style.color="black";
+        }
+
+        
+    </script>
+</body>
+</html>
