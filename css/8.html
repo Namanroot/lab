@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .normal input {
+            width: 98%;
+        }
+
+        .files input {
+            width: 100%;
+            float: left;
+        }
+
+        .wid input {
+            width: 200%;
+
+        }
+
+        .selc input {
+            width: 100%;
+        }
+
+        .headline th {
+            background: rgb(255, 236, 239);
+        }
+
+        table {
+            background: rgb(41, 223, 255);
+        }
+
+        input {
+            background: rgb(222, 253, 222);
+        }
+
+        textarea {
+            background: rgb(222, 253, 222);
+        }
+
+        table .headline {
+            background: red;
+        }
+
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table border=" 2" width="400">
+
+        <tr class="headline">
+            <th colspan="7">
+                <h1>User Form
+                </h1>
+            </th>
+        </tr>
+        <div class="body-in">
+            <tr>
+                <td colspan="3">Enter Name</td>
+                <td colspan="5">
+                    <div class="normal"> <input type="text" name="" id=""></div>
+                </td>
+        </div>
+        </tr>
+        <tr>
+            <td colspan="3">Enter Password</td>
+            <td colspan="5">
+                <div class="normal"><input type="password" name="" id="">
+            </td>
+            </div>
+        </tr>
+
+        <tr>
+            <td colspan="3">Enter Address</td>
+            <td colspan="5">
+                <div class="normal"><textarea></textarea>
+            </td>
+        </tr>
+        </div>
+        <tr>
+            <div class="selc">
+                <td colspan="3">Select Game</td>
+                <td colspan="4"> <input type="checkbox" name="" id="">Hockey<br>
+                    <input type="checkbox" name="" id="">Football<br>
+                    <input type="checkbox" name="" id="">Badminton<br>
+                    <input type="checkbox" name="" id="">Cricket<br>
+                    <input type="checkbox" name="" id="">Volleyball<br>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">Gender</td>
+            <td colspan="5">
+                <input type="radio" name="other" id="">Male
+                <input type="radio" name="other" id="">Female<br>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Select ur age</td>
+            <td colspan="5">
+                <select type="age">
+                    <option>
+                        select
+                    </option>
+                    <option>
+                        12+
+                    </option>
+                    <option>
+                        18+
+                    </option>
+                    <option>
+                        32+
+                    </option>
+                    <option>
+                        42+
+                    </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <div class="files">
+                <td align="center" colspan="5"> <input type="file" name="" id=""></td>
+        </tr>
+        </div>
+        <tr>
+            <div class="wid">
+                <td colspan="5" rowspan="2" width="100" align="center"> <input type="button" value="Click Me">
+                    <input type="reset" name="" id="">
+                    <input type="submit" name="" id="">
+                </td>
+            </div>
+        </tr>
+        </div>
+        </div>
+    </table>
+
+    </div>
+</body>
+
+</html>
