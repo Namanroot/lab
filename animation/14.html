@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1 {
+            position: absolute;
+            background-color: red;
+            width: 100px;
+            height: 50px;
+            left: 0px;
+        }
+
+        .box2 {
+            position: absolute;
+            background-color: black;
+            width: 100px;
+            height: 50px;
+            top: 100px;
+            left: 0px;
+        }
+
+        .box:active .box1 {
+            left: 600px;
+            transition: 2s;
+        }
+
+        .box:active .box2 {
+            left: 600px;
+            transition: 2s;
+            transition-delay: 2s;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+        </div>
+        <div class="box2">
+        </div>
+    </div>
+</body>
+
+</html>
