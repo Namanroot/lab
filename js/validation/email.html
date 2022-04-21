@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function validate() {
+            strValidate = strForm.str.value.search(/^\w+@\w+\.\w{2,3}/i);
+            if (strValidate == -1) {
+                alert("Not Valid");
+            } else {
+                alert("Valid");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="strForm" onsubmit="validate();">
+        <label> <b> Enter email </b> </label>
+        <input type="text" name="str" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>

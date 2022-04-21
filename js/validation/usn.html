@@ -1,0 +1,28 @@
+
+<html>
+
+<head>
+    <script type="text/javascript">
+        function validate() {
+            let strValidate = strForm.str.value.search(/1BM20IS[0-9]{3}/i);
+            if (strValidate == -1) {
+                alert("Not Valid");
+            }
+            else{
+                alert("Valid");
+            }
+            
+        }
+    </script>
+    <title>HU</title>
+</head>
+
+<body>
+    <form name="strForm" onsubmit="validate();">
+        <label> <b> Enter USN </b> </label>
+        <input type="text" name="str" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
